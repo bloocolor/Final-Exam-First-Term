@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class FinalSystem {
+    public static void main(String[] args) {
+
+        Scanner formula = new Scanner(System.in);
+
+        //Input your given name.
+        System.out.print("Name: ");
+        String name = formula.nextLine();
+
+        //The process after you input your grades.
+        System.out.print("Input your score in CCE 101: ");
+        int score1 = formula.nextInt();
+
+        System.out.print("Input your score in GE 15: ");
+        int score2 = formula.nextInt();
+
+        System.out.print("Input your score in GE 3: " );
+        int score3 = formula.nextInt();
+
+        //Calculating your total score of your grades
+        double total = score1 + score2 + score3;
+        //Dividing your total score by 3.
+        double total1 = total / 3.0;
+
+        //The output of your data's.
+        System.out.println("\n======= THE RESULTS =======\n");
+        System.out.println("Name " + name);
+        System.out.println("Your score in CCE 101 is: " + score1);
+        System.out.println("Your score in GE 15: " + score2);
+        System.out.println("And your score in GE 3 is: " + score3 + "\n");
+        System.out.println("So, the total score before dividing is: " + total);
+        System.out.print("Your total average are dividing is: " + total1 + "\n");
+
+        //Using if-else statement to localize your total score
+        if (total1 >= 95) {
+            System.out.print("You passed! You got the highest grade " + name + "!");
+        } else if (total1 >= 90) {
+            System.out.print("You passed! But you got a higher grade, than the rest " + name + "!");
+        } else if (total1 >= 85) {
+            System.out.print("You passed! And got an average grade " + name + "!");
+        } else if (total1 >= 80) {
+            System.out.print("You passed! That belong to the average grade " + name + "!");
+        } else if (total1 >= 75) {
+            System.out.print("You passed! You barely pass " + name + ". But still, you passed, congrats!");
+        } else {
+            System.out.print("You failed " + name + "\n");
+        }
+
+        /* Group 5 members:
+
+            Patalino, Khent Crister A.
+            Tirador, Luis Antonio.
+            Alolor, April Grace.
+            Ganal, Mj.
+
+            Thank you Sir Barba!
+
+         */
+    }
+}
