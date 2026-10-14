@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class FinalSystem {
+public class StudentGradeCalculator {
     public static void main(String[] args) {
 
         Scanner formula = new Scanner(System.in);
